@@ -1,312 +1,226 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
-  <!-- Replace the content tag with appropriate information -->
-  <meta name="description" content="DESCRIPTION META TAG">
-  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
-  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
-  <meta property="og:url" content="URL OF THE WEBSITE"/>
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
-  <meta property="og:image" content="static/image/your_banner_image.png" />
-  <meta property="og:image:width" content="1200"/>
-  <meta property="og:image:height" content="630"/>
+  <head>
+    <meta charset="utf-8" />
+    <title>BioKGBench</title>
+    <meta
+      name="description"
+      content="BioKGBench: Knowledge Graph Checking Benchmark of AI Agent for Biomedical Science"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <meta property="og:image" content="static/iamges/logo.png" />
+    <link rel="stylesheet" href="static/css/normalize.css" />
+    <link rel="stylesheet" href="static/css/fonts.css" />
+    <link rel="stylesheet" href="static/css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="..."
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="static/css/bulma.min.css">
+    <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+    <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="static/css/index.css">
+    <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+    <script defer src="static/js/fontawesome.all.min.js"></script>
+    <script src="static/js/bulma-carousel.min.js"></script>
+    <script src="static/js/bulma-slider.min.js"></script>
+    <script src="static/js/index.js"></script>
+    <link rel="icon" type="image/x-icon" href="static/images/logo.png">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8T4P5V2X67"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-8T4P5V2X67');
+    </script>
+  </head>
 
 
-  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
-  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
-  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
-  <meta name="twitter:card" content="summary_large_image">
-  <!-- Keywords for your paper to be indexed by-->
-  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-
-  <title>Academic Project Page</title>
-  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-  rel="stylesheet">
-
-  <link rel="stylesheet" href="static/css/bulma.min.css">
-  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
-  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
-  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-  <link rel="stylesheet" href="static/css/index.css">
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
-  <script defer src="static/js/fontawesome.all.min.js"></script>
-  <script src="static/js/bulma-carousel.min.js"></script>
-  <script src="static/js/bulma-slider.min.js"></script>
-  <script src="static/js/index.js"></script>
-</head>
 <body>
-
-
-  <section class="hero">
-    <div class="hero-body">
-      <div class="container is-max-desktop">
-        <div class="columns is-centered">
-          <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Academic Project Page</h1>
-            <div class="is-size-5 publication-authors">
-              <!-- Paper authors -->
-              <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
-                <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
-                  <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
-                  </span>
-                  </div>
-
-                  <div class="is-size-5 publication-authors">
-                    <span class="author-block">Institution Name<br>Conferance name and year</span>
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
-                  </div>
-
-                  <div class="column has-text-centered">
-                    <div class="publication-links">
-                         <!-- Arxiv PDF link -->
-                      <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
-                        <span class="icon">
-                          <i class="fas fa-file-pdf"></i>
-                        </span>
-                        <span>Paper</span>
-                      </a>
-                    </span>
-
-                    <!-- Supplementary PDF link -->
-                    <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                      </span>
-                      <span>Supplementary</span>
-                    </a>
-                  </span>
-
-                  <!-- Github link -->
-                  <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fab fa-github"></i>
-                    </span>
-                    <span>Code</span>
-                  </a>
-                </span>
-
-                <!-- ArXiv abstract Link -->
-                <span class="link-block">
-                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
-                </a>
-              </span>
-            </div>
+<div style="padding-bottom: 50px">
+      <section style="background-color: var(--dark_accent_color)">
+        <div
+          class="content-wrapper title-wrapper"
+          style="flex-direction: column"
+        >
+          <div
+            style="
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              padding-bottom: 15px;
+            "
+          >
+            <h1 style="font-size: 60px; padding-top: 0.4em; font-style: italic;">BioKGBench</h1>
+            <img
+              src="static/images/logo.png "
+              style="height: 150px; padding-top: 0em; padding-left: 0.5em"
+            />
+          </div>
+          <h2 style="font-size: 25px;">Knowledge Graph Checking Benchmark of AI Agent for Biomedical Science</h2>
+          <p style="text-align: center;margin-top:1em;">
+            Xinna Lin, Siqi Ma, Junjie Shan, Xiaojing Zhang, Shell Xu Hu,<br />
+            Tiannan Guo, Stan Z. Li, Kaicheng Yu  <br />
+          </p>
+          <div class="content-wrapper" style="margin-top: 2em">
+            <a href="https://arxiv.org/abs/2310.06770">
+              <button class="outline">
+                <i class="fa fa-paperclip"></i> Paper&nbsp;
+              </button>
+            </a>
+            <a href="https://github.com/westlake-autolab/Agent4S-BioKG">
+              <button class="outline">
+                <i class="fab fa-github"></i> Code&nbsp;
+              </button>
+            </a>
+            <a href="leaderboard.html">
+            <button class="outline" style="width: 200px;">
+              <i class="fa fa-trophy"></i> Leaderboard&nbsp;
+            </button>
+            </a>
           </div>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
+      </section>
 
 
-<!-- Teaser video-->
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/banner_video.mp4"
-        type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
-      </h2>
-    </div>
-  </div>
-</section>
-<!-- End teaser video -->
-
-<!-- Paper abstract -->
 <section class="section hero is-light">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
+      <div class="column is-full">
         <div class="content has-text-justified">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            AI agents built upon Large Language Models (LLMs) are designed to save human effort in scientific discovery, and being able to accurately understand the existing research is the most critical ability of such AI scientists. However, systematically evaluating this ability remains largely unexplored.
           </p>
+          <p>
+            In this work:
+          </p>
+          <ul>
+              <li>
+                  We propose a novel agent evaluation benchmark, <span style="color:#051750e7;"><b>BioKGBench</b></span>, to assess the agents' capabilities in utilizing external tools and understanding both structured data (knowledge graphs, KGs) and unstructured data (literature). Specifically, we introduce two atomic tasks, <span style="color:#051750e7;"><b>knowledge graph question answering (KGQA)</b></span> and <span style="color:#051750e7;"><b>scientific claim verification (SCV)</b></span>, as well as an agent task for <span style="color:#051750e7;"><b>knowledge graph checking (KGCheck)</b></span>.
+              </li>
+              <li>
+                  We find that none of the existing agents can accomplish our tasks without moderate adaptation. Therefore, we introduce our agent <span style="color:#051750e7;"><b>BKGAgent</b></span>, the first agent framework to interact with external knowledge graphs as well as research papers, achieving <span style="color:#051750e7;"><b>large-scale data understanding and validation</b></span> beyond human capabilities.
+              </li>
+          </ul>
+          </p>
+          <img src="static/images/teaser.png" style="margin:auto;display:block;"/>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End paper abstract -->
 
 
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
-    </div>
-  </div>
-</div>
-</div>
-</section>
-<!-- End image carousel -->
-
-
-
-
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- Youtube embed code here -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <div class="content-wrapper">
+        <div class="content-box">
+          <table>
+            <tr>
+              <td class="text-content" style="text-align: left;">
+                <h2 class="text-title">BioKGBench</h2>
+                <p>
+                  Starting from the origin of <span style="color: #051750e7;"><b>CKG&mdash;Proteins</b></span>, we select the sub-graph to contain exactly <span style="color: #051750e7;">12</span> categories of biological entities.
+                </p>
+                <p>
+                  Thus, the sub-graph consists of <span style="color: #051750e7;"><b>484,955</b></span> entities (nodes) across <span style="color: #051750e7;"><b>12</b></span> categories (Biologically defined) and <span style="color: #051750e7;"><b>18,959,943</b></span> relationships (edges) of <span style="color: #051750e7;"><b>18</b></span> types, with each type consisting of relationships between a unique pair of entity categories.
+                </p>
+              </td>
+                <td class="image-content">
+                <img src="static/images/subkg.png" style="display:block;width: 100%;"/>
+              </td>
+            </tr>
+          </table>
+          <div class="text-content" style="text-align: left;">
+            <p>
+            After the sub-graph is ready, we construct the question set for the <span style="color: #051750e7;"><b>Question Answering (QA)</b></span> database
+            in two steps. 
+            </p>
+            <p>
+              - We first handcraft question templates by selecting <span style="color: #051750e7;"><b>biomedical fields</b></span> and <span style="color: #051750e7;"><b>pinpointing entities</b></span> 
+              and <span style="color: #051750e7;"><b>relations</b></span> in the CKG. Natural language questions were constructed in various formats,
+              ensuring their accuracy through peer reviews and expert consultations.
+            </p>
+            <p>
+              - We then expand our dataset with autogenerated questions by matching CKG data to constructed QA templates, 
+              resulting in the generation of <span style="color: #051750e7;"><b>698</b></span> questions across <span style="color: #051750e7;"><b>3</b></span> reasoning types and <span style="color: #051750e7;"><b>16</b></span> question categorie.
+            </p>
+          </div>
+          <div class="image-content">
+            <img src="static/images/kgreltype.jpg" style="display: block;width: 80%; margin:auto"/>
+            <p>
+              Statics of three different reasoning types of KGQA dataset
+            </p>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
-<!-- End youtube video -->
 
-
-<!-- Video carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4"
-            type="video/mp4">
-          </video>
+      <div class="content-wrapper">
+        <div class="content-box">
+          <div class="text-content" style="text-align: left;">
+                <h2 class="text-title">BKGAgent</h2>
+                <p>
+                  We propose a biomedical knowledge-graph agent (BKGAgent), a multi-agent framework based on langgraph, capable of retrieving information from knowledge graph
+                  and cross-validating its correctness with multiple information sources. Our framework is comprised
+                  of three agents and a tool executor:
+                </p>
+                <p>
+                  - the <span style="color: #051750e7;"><b>team leader</b></span> for the progress control.
+                </p>
+                <p>
+                  - the <span style="color: #051750e7;"><b>KG agent</b></span> for information retrieval from KG.
+                </p>
+                <p>
+                  - the <span style="color: #051750e7;"><b>validation agent</b></span> for checking the correctness of the information from KG.
+                </p>
+                <p>
+                  - the <span style="color: #051750e7;"><b>tool executor</b></span> is solely responsible for executing functions, and is not based on LLMs.
+                </p>
+                <p>
+                  This setup
+                  simulates the workflow of a human research team, where a leader supervises the assistants' work and
+                  makes the final decision based on their feedback.
+                </p>
+          </div>
+          <div class="image-content">
+            <img src="static/images/framework.png" style="display:block;width: 100%;"/>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
-<!-- End video carousel -->
-
-
-
-
-
-
-<!-- Paper poster -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
-        
-      </div>
-    </div>
-  </section>
-<!--End paper poster -->
-
-
-<!--BibTex citation -->
-  <section class="section" id="BibTeX">
-    <div class="container is-max-desktop content">
-      <h2 class="title">BibTeX</h2>
-      <pre><code>BibTex Code Here</code></pre>
-    </div>
-</section>
-<!--End BibTex citation -->
-
-
-  <footer class="footer">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
-
+    
+      <div class="content has-text-justified">
           <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-            You are free to borrow the of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
+            Citation: <pre id="citation"><code style="color: white; font-family: 'Courier New', Courier, monospace;">@inproceedings{
+            jimenez2024swebench,
+            title={{SWE}-bench: Can Language Models Resolve Real-world Github Issues?},
+            author={Carlos E Jimenez and John Yang and Alexander Wettig and Shunyu Yao and Kexin Pei and Ofir Press and Karthik R Narasimhan},
+            booktitle={The Twelfth International Conference on Learning Representations},
+            year={2024},
+            url={https://openreview.net/forum?id=VTF8yNQM66}
+          }</code></pre>
           </p>
+      </div>
 
+  </div>
+
+
+</section>
+
+
+
+<footer class="footer-container">
+      <div class="content-wrapper">
+        <div class="footer-text">
+          <a href="https://github.com/westlake-autolab">© westlake-autolab</a>
         </div>
       </div>
-    </div>
-  </div>
 </footer>
 
-<!-- Statcounter tracking code -->
-  
-<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
 
-    <!-- End of Statcounter Code -->
 
-  </body>
-  </html>
+</body>
