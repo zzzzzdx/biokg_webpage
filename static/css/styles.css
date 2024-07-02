@@ -296,7 +296,8 @@ tr {
 }
 
 .table {
-  table-layout: fixed;
+  /* table-layout: fixed; */
+  table-layout: auto;
 }
 
 .table th, .table td {
@@ -330,14 +331,14 @@ tr {
   background-color: var(--even_line_color);
 }
 
-.table th:not(:first-child), .table td:not(:first-child) {
+/* .table th:not(:first-child), .table td:not(:first-child) {
   min-width: fit-content;
   white-space: nowrap;
-}
+} */
 
-.table th:first-child, .table td:first-child {
+/* .table th:first-child, .table td:first-child {
   width: 100%;
-}
+} */
 
 .sticky-header-content {
   position: sticky;
